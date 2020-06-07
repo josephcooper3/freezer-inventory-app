@@ -17,15 +17,23 @@ public class FoodItem {
     @Column(name = "food_type")
     private String foodType;
 
+    @Column(name = "quantity")
+    private Integer quantity;
+
+    @Column(name = "unit")
+    private String unit;
+
     @Column(name = "date_frozen")
     private LocalDate dateFrozen;
 
     @Column(name = "notes")
     private String notes;
 
-    public FoodItem(String itemName, String foodType, LocalDate dateFrozen, String notes) {
+    public FoodItem(String itemName, String foodType, Integer quantity, String unit, LocalDate dateFrozen, String notes) {
         this.itemName = itemName;
         this.foodType = foodType;
+        this.quantity = quantity;
+        this.unit = unit;
         this.dateFrozen = dateFrozen;
         this.notes = notes;
     }
@@ -55,6 +63,22 @@ public class FoodItem {
 
     public void setFoodType(String foodType) {
         this.foodType = foodType;
+    }
+
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
+    public String getUnit() {
+        return unit;
+    }
+
+    public void setUnit(String unit) {
+        this.unit = unit;
     }
 
     public LocalDate getDateFrozen() {

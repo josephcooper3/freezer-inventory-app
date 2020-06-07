@@ -20,7 +20,7 @@ public class FreezerserviceApplicationTests {
 
 	@Test
 	public void createFoodItem() {
-		FoodItem chips = new FoodItem("Chips", "Carbs", LocalDate.parse("2020-06-01"), "Home-style seasoned oven chips");
+		FoodItem chips = new FoodItem("Chips", "Carbs", 1, "bag", LocalDate.parse("2020-06-01"), "Home-style seasoned oven chips");
 		foodItemRepository.save(chips);
 	}
 
