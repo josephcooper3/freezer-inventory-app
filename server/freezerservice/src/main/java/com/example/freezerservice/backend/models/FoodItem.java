@@ -1,4 +1,4 @@
-package com.example.freezerservice.models;
+package com.example.freezerservice.backend.models;
 
 import javax.persistence.*;
 import java.time.LocalDate;

@@ -1,6 +1,6 @@
-package com.example.freezerservice.repositories;
+package com.example.freezerservice.backend.repositories;
 
-import com.example.freezerservice.models.FoodItem;
+import com.example.freezerservice.backend.models.FoodItem;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

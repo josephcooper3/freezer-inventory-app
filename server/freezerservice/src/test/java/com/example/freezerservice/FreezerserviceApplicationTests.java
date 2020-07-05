@@ -1,7 +1,7 @@
 package com.example.freezerservice;
 
-import com.example.freezerservice.models.FoodItem;
-import com.example.freezerservice.repositories.FoodItemRepository;
+import com.example.freezerservice.backend.models.FoodItem;
+import com.example.freezerservice.backend.repositories.FoodItemRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
